@@ -1,2 +1,2 @@
 # Revision-Hub
-Revision tool for certain IB subjects. 
+Utilise quizzes to consolidate your knowledge and maximise the outcome of your revision. IB revision tool.
