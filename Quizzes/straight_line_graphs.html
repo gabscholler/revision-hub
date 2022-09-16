@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="quiz.css">
+		<title>Straight-Line Graphs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+	</head>
+<body>
+
+	<h2>Straight-line Graphs</h2>
+	<br>
+  <p id="question"></p>
+
+	<br>
+  <p >y =</p>
+	<input id="user_input" autocomplete="off" placeholder="Answer" spellcheck="false">
+	
+	<button type="button" onclick="myFunction()" id="subb">Submit</button>
+  <button type="button" onclick="myFunction2()">Show Answer</button>
+  <p id="answer"></p>
+  <p id="demo"></p>
+  
+	<script>
+
+	let options = [
+    "Calculate Gradient"
+    //"Perpendicular Equation",
+    //"Parallel Equation"
+  ]
+  randnumb = Math.floor(Math.random()*options.length)
+
+  if (options[randnumb] == options[0]) {
+    x1 = Math.floor(Math.random()*10)
+    y1 = Math.floor(Math.random()*10)
+    x2 = Math.floor(Math.random()*10)
+    y2 = Math.floor(Math.random()*10)
+
+    while (x2 - x1 == 0) {
+      x1 = Math.floor(Math.random()*10)
+      x2 = Math.floor(Math.random()*10)
+    }
+    
+    gradient = (y2 - y1) / (x2 - x1)
+    gradient = Math.round(gradient * 100) / 100
+    answer = "y = " + gradient + "x" 
+  }
+    
+  document.getElementById("question").innerHTML = "Calculate the <strong>gradient</strong> of the equation that goes though <strong>(" + x1 + ", " + y1 + ")</strong> and <strong>(" + x2 + ", " + y2 + ")</strong>. <br> Round you answer to 2 decimal points when possible.";	
+
+	function reload_page() {
+		location.reload();
+	}
+
+  function myFunction2() {
+    document.getElementById("answer").innerHTML = answer;
+  }
+	function myFunction() {
+		var x, text;
+		
+		x = document.getElementById("user_input").value;
+
+		if (x.toLowerCase() == answer) {
+			texttext = "Correct";
+			text = texttext.fontcolor("#02c937");
+		} else {
+			texttext = "Incorrect";
+			text = texttext.fontcolor("#eb0909");
+		}
+		document.getElementById("demo").innerHTML = text;
+		}
+
+		x = document.getElementById("user_input").value;
+
+		</script>
+		<br>
+		<br>
+	
+	<div>
+		<button onclick="reload_page()">New Question</button>
+	<div>
+		
+</body>
+</html> 
