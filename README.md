@@ -2,7 +2,7 @@
 
 Simple IB revision tool. Utilise quizzes to consolidate your knowledge and maximise the outcome of your revision. 
 
-See website [here](http://revisionhub.tech/).
+**See website [here](http://revisionhub.tech/).**
 
 ## Table of Contents
 * [Badges](#badges)
