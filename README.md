@@ -1,5 +1,7 @@
 # [Revision Hub](http://revisionhub.tech/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+# Note: Project no longer in development
+
 Simple IB revision tool. Utilise quizzes to consolidate your knowledge and maximise the outcome of your revision. 
 
 **See website [here](http://revisionhub.tech/).**
